@@ -1,27 +1,28 @@
-/* Resetowanie domyślnych stylów dla przeglądarek */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styl strony głównej */
+
 body {
-    background-color: #333; /* Ciemne tło */
-    color: #fff; /* Jasna czcionka */
+    background-color: #333;
+
+    color: #fff;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Nagłówek */
+
 h3 {
     font-size: 24px;
     margin: 20px 0;
 }
 
-/* Formularz */
+
 form {
     margin: 20px auto;
     width: 80%;
@@ -40,31 +41,39 @@ input[type="text"] {
     margin: 5px 0;
 }
 
+
 input[type="submit"] {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Wyświetlanie posta */
+input[type="submit"]:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+
 div {
-    background-color: #fff; /* Białe tło ramki */
-    color: #333; /* Ciemny tekst */
+    background-color: #fff;
+    color: #333;
     padding: 20px;
-    border: 1px solid #333; /* Ciemny obramowanie */
+    border: 2px solid #a71b4c;
     border-radius: 5px;
-    margin: 20px 0;
+    margin: 0 auto;
+    width: 33%;
     text-align: left;
 }
 
-/* Data posta */
+
 div p:first-child {
     font-size: 14px;
 }
 
-/* Nick i treść posta */
+
 div p:nth-child(2),
 div p:nth-child(3) {
     font-size: 18px;
